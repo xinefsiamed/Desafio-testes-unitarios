@@ -33,7 +33,7 @@ describe("Create Statement Use case", () => {
     const user = await createUserUseCase.execute({
       name: 'test',
       email: 'test@test.com',
-      password: 'test123'
+      password: 'password'
     })
 
     const deposit = await createStatementUseCase.execute({
@@ -55,7 +55,7 @@ describe("Create Statement Use case", () => {
     const user = await createUserUseCase.execute({
       name: 'test',
       email: 'test@test.com',
-      password: 'test123'
+      password: 'password'
     })
 
     await createStatementUseCase.execute({
@@ -95,7 +95,7 @@ describe("Create Statement Use case", () => {
       const user = await createUserUseCase.execute({
         name: 'test',
         email: 'test@test.com',
-        password: 'test123'
+        password: 'password'
       })
 
       await createStatementUseCase.execute({

@@ -17,8 +17,8 @@ describe("Create User Controller", () => {
   })
 
   afterAll(async () => {
-    connection.dropDatabase()
-    connection.close()
+    await connection.dropDatabase()
+    await connection.close()
   })
 
   it("Should be able to create a new user", async () => {

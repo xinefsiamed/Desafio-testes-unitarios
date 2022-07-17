@@ -17,8 +17,8 @@ describe('Show User Profile Controller', () => {
   })
 
   afterAll(async () => {
-    connection.dropDatabase()
-    connection.close()
+    await connection.dropDatabase()
+    await connection.close()
   })
 
   it("should be able to see a user profile", async () => {
